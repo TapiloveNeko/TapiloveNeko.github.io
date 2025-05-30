@@ -1,0 +1,53 @@
+@use "./../global" as *;
+
+footer {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  box-shadow: 0 0px 15px 0px red;
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  box-sizing: border-box;
+  font-family: serif;
+
+  .sns {
+    h3 {
+      font-size: 2.5rem;
+    }
+    .sns-icon-container {
+      display: flex;
+      gap: 20px;
+      margin-top: 10px;
+
+      .sns-icon-link {
+        width: 50px;
+        height: 50px;
+
+        .sns-icon {
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+a {
+  display: block;
+    &:hover {
+      @include pc {
+        transform: scale(1.2);
+      }
+    }
+  }
+  .footer-menu-container {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 30px;
+
+    .footer-menu-list {
+      & + .footer-menu-list {
+        margin-top: 16px;
+      }
+    }
+  }
+}

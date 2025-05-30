@@ -1,0 +1,16 @@
+/*--------------------------------------------*/
+/*-media-size---------------------------------*/
+/*--------------------------------------------*/
+$breakpoint-pc: "768px";
+$breakpoint-sp: "767px";
+
+@mixin pc {
+  @media screen and (min-width: $breakpoint-pc) {
+    @content;
+  }
+}
+@mixin sp {
+  @media screen and (max-width: $breakpoint-sp) {
+    @content;
+  }
+}

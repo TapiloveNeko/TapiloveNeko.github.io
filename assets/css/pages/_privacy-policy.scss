@@ -1,0 +1,12 @@
+@use "./../global" as *;
+
+.privacy-policy-body {
+  .privacy {
+    .privacy-detail {
+      margin-top: 3rem;
+      .c-text {
+        margin-top: .6rem;
+      }
+    }
+  }
+}
