@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <title>Keisuke OFFICIAL SITE</title>
+    <meta name="description" content="日本のシンガーソングライター、ミュージシャン、ロックバンド：J-Rock StarのボーカルをしているKeisukeの公式サイト">
+    <link rel="icon" href="assets/img/favicon.ico">
+
+    <!-- OGP設定 -->
+    <meta property="og:title" content="日本のシンガーソングライター、ミュージシャン、ロックバンド：J-Rock StarのボーカルをしているKeisukeの公式サイト">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://けいすけ.com/">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="日本のシンガーソングライター、ミュージシャン、ロックバンド：J-Rock StarのボーカルをしているKeisukeの公式サイト">
+    <meta property="og:site_name" content="Keisuke OFFICIAL SITE">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/all.css">
+  </head>
+  <body class="masterpiece-body">
+    <main class="l-main">
+      <div class="l-container">
+        <h1 class="page-title">MASTERPIECE</h1>
+        <ul class="masterpiece-container">
+          <!-- 作品のHTMLはJavaScriptで生成 -->
+        </ul>
+      </div>
+
+      <div class="outside-modal">
+        <div class="inside-modal" id="masterpieceModal">
+          <button class="icon-button xmark-buttom" id="closeModal">
+            <i class="fa-solid fa-xmark" style="color: #000000"></i>
+          </button>
+          <div class="modal-detail">
+            <button
+              class="icon-button"
+              id="forwardButton"
+              onclick="changeImage(-1)"
+            >
+              <i class="fa-solid fa-caret-left" style="color: #000000"></i>
+            </button>
+            <div class="masterpiece-img-wrap">
+              <img
+                src="${artwork.imageSrc}"
+                id="${imageID}"
+                class="masterpiece-img"
+              >
+            </div>
+            <button class="icon-button" id="backButton" onclick="changeImage(1)">
+              <i class="fa-solid fa-caret-right" style="color: #000000"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="assets/js/all.js"></script>
+    <script src="assets/js/masterpiece.js"></script>
+
+  </body>
+</html>
